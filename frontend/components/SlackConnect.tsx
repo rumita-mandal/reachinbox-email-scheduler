@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { api } from '@/lib/api';
 import { Button } from './ui/Button';
 import { toast } from './ui/Toast';
-import { Slack, Check, X } from 'lucide-react';
+import { Hash, Check, X } from 'lucide-react';
 import { API_BASE_URL } from '@/lib/api';
 
 export function SlackConnect() {
