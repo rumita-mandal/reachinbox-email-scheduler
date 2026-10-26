@@ -141,7 +141,7 @@ export default function LoginPage() {
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <p className="text-xs text-gray-600">ReachInbox / Outbox Labs · Hiring Assignment</p>
           <a
-            href="http://localhost:4000/api/queue"
+            href={`${API_BASE_URL}/api/queue`}
             target="_blank"
             rel="noreferrer"
             className="text-xs text-gray-600 hover:text-violet-400 transition-colors"
