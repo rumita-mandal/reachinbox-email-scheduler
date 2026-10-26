@@ -21,8 +21,8 @@ import { reconcileJobsOnStartup } from './services/reconcileService';
 import authRoutes from './routes/auth';
 import emailRoutes from './routes/email';
 import slackRoutes from './routes/slack';
-
 const app = express();
+app.set('trust proxy', 1);
 
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors({ origin: config.frontendUrl, credentials: true }));
