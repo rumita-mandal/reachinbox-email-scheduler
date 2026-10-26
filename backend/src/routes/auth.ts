@@ -58,7 +58,7 @@ router.post('/logout', (req: Request, res: Response) => {
 
 // GET /api/auth/dev-login — creates a mock session without Google OAuth (dev only)
 router.get('/dev-login', async (req: Request, res: Response) => {
-  if (config.nodeEnv !== 'development' && process.env.ENABLE_DEV_LOGIN !== 'true') { {
+  if (config.nodeEnv !== 'development' && process.env.ENABLE_DEV_LOGIN !== 'true') {
     res.status(404).json({ error: 'Not available in production' });
     return;
   }
