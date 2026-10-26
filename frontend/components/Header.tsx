@@ -71,7 +71,7 @@ export function Header({ user, onLogout }: HeaderProps) {
                   </div>
                   <div className="p-1">
                     <a
-                      href="http://localhost:4000/api/queue"
+                      href={`${API_BASE_URL}/api/queue`}
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
