@@ -14,11 +14,20 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Allow backend API calls with credentials from Next.js
+        
         source: "/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
         ],
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination:
+          "https://reachinbox-email-scheduler-wfh0.onrender.com/api/:path*",
       },
     ];
   },
