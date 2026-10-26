@@ -1,5 +1,5 @@
 'use client';
-
+import { API_BASE_URL } from '@/lib/api';
 import { User, LogOut, Settings, ChevronDown, Zap } from 'lucide-react';
 import { useState } from 'react';
 import type { User as UserType } from '@/lib/api';
